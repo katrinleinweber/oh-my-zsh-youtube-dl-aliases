@@ -4,6 +4,10 @@ alias ytnpl="youtube-dl --no-playlist"
 alias yt="ytnpl  --format 18"
 alias yth="ytnpl --format 22"
 
+# For presentations
+alias ytp="ytnpl  --format 244+worstaudio"
+alias ytpp="ytnpl --format 247+worstaudio"
+
 # Speech
 alias yts="ytnpl --format worstaudio --extract-audio"
 
