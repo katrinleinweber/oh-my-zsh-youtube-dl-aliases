@@ -1,6 +1,6 @@
 # Prefer SD on YouTube
-alias yt="youtube-dl --format 244 --no-playlist"
-alias yth="youtube-dl --format 247 --no-playlist"
+alias yt="youtube-dl  --format 18 --no-playlist"
+alias yth="youtube-dl --format 22 --no-playlist"
 
 # For spoken audio
 alias yta="youtube-dl --format worstaudio --extract-audio --no-playlist"
