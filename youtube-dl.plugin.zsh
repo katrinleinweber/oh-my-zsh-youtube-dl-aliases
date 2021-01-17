@@ -9,10 +9,10 @@ alias ytp="ytnpl  --format 244+worstaudio"
 alias ytpp="ytnpl --format 247+worstaudio"
 
 # Speech
-alias yts="ytnpl --format worstaudio --extract-audio"
+alias yts="ytnpl --format worstaudio"
 
 # Music
-alias ytm="ytnpl --format bestaudio --extract-audio"
+alias ytm="ytnpl --format bestaudio"
 
 ytf() { # List formats & prompt for which one(s) to download
 	FORMATS=$(ytnpl --list-formats "$1")
