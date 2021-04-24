@@ -24,6 +24,6 @@ ytf() { # List formats & prompt for which one(s) to download
 	echo "" && echo "== Preparing to save download as:"
 	echo "  $(pwd)/$(youtube-dl --restrict-filenames --get-filename $1)"
 	echo "== Please copy-paste 👇 a 'format code' (or vid+aud) ☝️"
-	FORMAT=$(read -r)
+	read -r FORMAT
 	ytnpl --restrict-filenames --format "$FORMAT" "$1"
 }
