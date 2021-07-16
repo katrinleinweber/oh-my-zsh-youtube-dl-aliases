@@ -1,4 +1,4 @@
-alias ytnpl="youtube-dl --no-playlist"
+alias ytnpl="youtube-dl --no-playlist --restrict-filenames"
 
 # Prefer SD on YouTube
 alias yt="ytnpl  --format 18"
