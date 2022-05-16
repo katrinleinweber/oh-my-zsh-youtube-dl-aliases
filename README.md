@@ -11,7 +11,7 @@ by foregoing higher-than-sufficient quality levels.
 ### Installation
 
 1. Read [Oh My Zsh's notes on custom plugins](https://github.com/ohmyzsh/ohmyzsh#custom-plugins-and-themes)
-1. `cd $ZSH_CUSTOM`
+1. `cd $ZSH_CUSTOM/plugins`
 1. `git clone https://github.com/katrinleinweber/oh-my-zsh-youtube-dl-aliases youtube-dl`
 1. Add `youtube-dl` to your `~/.zshrc` file's `plugins=(…)` list
 1. Restart your shell
