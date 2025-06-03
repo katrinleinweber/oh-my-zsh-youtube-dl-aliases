@@ -8,7 +8,7 @@ alias yth="ytnpl --format 22"
 alias ytp="ytnpl --write-subs --write-auto-subs --format 244+249"
 
 # Programming presentations
-alias ytpp="ytnpl --write-subs --write-auto-subs --format 247+249"
+alias ytpp="ytnpl --write-subs --write-auto-subs --format 247+250"
 
 # Speech
 alias yts="ytnpl --write-subs --write-auto-subs --format worstaudio --extract-audio"
@@ -22,7 +22,6 @@ play_latest() {
 }
 
 ytf() { # List formats & prompt for which one(s) to download
-	set -eux -pipefail
 	which ffmpeg
 
 	FORMATS=$(ytnpl --list-formats "$1")
@@ -36,7 +35,7 @@ ytf() { # List formats & prompt for which one(s) to download
 		echo ""
 	done
 
-	echo "== Please copy-paste 👇 a 'format code' (or vid+aud) ☝️"
+	echo "== Please copy-paste 👇 a 'format code' (or vid+aud) ☝️ Frugal formats are: 247+250, 244+249"
 	read -r FORMAT
 	ytnpl --format "$FORMAT" "$1"
 	
